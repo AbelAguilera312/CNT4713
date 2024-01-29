@@ -4,8 +4,8 @@ class Assignment2:
     def __init__(self, year):
         self.year = year
 
-    def tellAge(self, current_year): 
-        age = current_year - self.year
+    def tellAge(self, currentYear): 
+        age = currentYear - self.year
         print(f'Your age is {age}')
 
     def listAnniversaries(self):
