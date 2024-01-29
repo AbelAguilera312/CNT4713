@@ -29,10 +29,11 @@ class Assignment2:
         
     @staticmethod
     def checkGoodString(string):
+        alphabet_set = set('abcdefghijklmnopqrstuvwxyz')
+
         digits_count = sum(c.isdigit() for c in string)
 
-        return len(string) >= 9 and string[0].isalpha() and digits_count == 1
-
+        return len(string) >= 9 and string[0] in alphabet_set and digits_count == 1
         
         
     
